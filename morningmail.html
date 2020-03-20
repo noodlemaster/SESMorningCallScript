@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SES Morning Call</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style type="text/css">
+      .Titles_Banner {
+          font-family: sans-serif;
+          text-align: center;
+          color: rgb(52,73,94);
+      }
+
+      body {
+          font-family: sans-serif;
+          text-align: center;
+          margin: auto;
+          background-color: rgb(197, 239, 247);
+      }
+
+      #Datecaption {
+          color: rgb(149,185,166);
+          font-family: sans-serif;
+          text-align: center;
+
+      }
+
+      /* Container holding the image and the text */
+      .container {
+          position: relative;
+      }
+
+      /* Bottom right text */
+      .Timetable_fd {
+
+          margin: auto;
+          margin-bottom: 20px;
+          width: 500px;
+          position:relative;
+          background-color: rgb(89,171,227);
+          color: white;
+          border: none
+      }
+
+      .Foodtable_m {
+
+          margin: auto;
+          width: 500px;
+          position: sticky;
+          background-color:  rgb(97,151,191);
+          color: white;
+          border: none
+      }
+
+      .Foodtable_l {
+
+          margin: auto;
+          width: 500px;
+          position:sticky;
+          background-color: rgb(102,204,153);
+          color: white;
+          border: none
+      }
+
+      .Foodtable_d {
+
+          margin: auto;
+          width: 500px;
+          position: sticky;
+          background-color: rgb(4,166,120);
+          color: white;
+          border: none;
+
+      }
+            
+      .Foodtable_c {
+
+          margin: auto;
+          width: 500px;
+          position: sticky;
+          background-color: #ff9800;
+          color: white;
+          border: none;
+
+      }
+      .weathertable{
+          margin: auto;
+          margin-bottom: 20px;
+          width: 500px;
+          position: relative;
+          background-color: rgb(22,180,133);
+          color: white;
+          border: none;
+
+      }
+
+      .worldcup{
+          margin: auto;
+          margin-bottom: 15px;
+          width: 500px;
+          position: relative;
+          color: white;
+          border: none;
+      }
+
+      .footballtable_today{
+          margin: auto;
+          margin-bottom: 0px;
+          width: 500px;
+          position: relative;
+          background-color: rgb(135,211,124);
+          color: white;
+          border: none;
+      }
+
+      .footballtable_results{
+          margin: auto;
+          margin-bottom: 20px;
+          width: 500px;
+          position: relative;
+          background-color: rgb(135,211,124);
+          color: white;
+          border: none;
+      }
+
+      #timetable_title{
+          margin-bottom: 1px;
+          font-size: 20px;
+      }
+
+      #footballtitle{
+          color: black;
+          margin-bottom: 1px;
+          border: none;
+          font-size: 20px;
+      }
+
+      #footballinfo{
+          border: none;
+          font-size: 20px;
+      }
+
+      #SEStablecaption {
+          color: rgb(52,73,94);
+          font-family: sans-serif;
+          text-align: center;
+          font-size: 18px;
+      }
+
+      th, td {
+          text-align: center;
+      }
+      table, th, td {
+
+          padding: 5px;
+      }
+      table {
+          border-spacing: 5px;
+      }
+    </style>
+
+  </head>
+
+
+  <body>
+    <div class="Titles_Banner">
+        <h1 id="Main_title" >
+            | SES <span>Morning</span> Call |<br>
+        </h1>
+    </div>
+
+    <!-- <span id="Datecaption"2><strong><b>| Today is:<span>dd</span>/<span>mm</span>/<span>yy</span> | <span>Weekday</span> |</b></strong></span> -->
+
+    <div class="Weather">
+      <span id="SEStablecaption"><strong><b>| Today's weather |</b></strong></span>
+      <!--a target="_blank" href="http://www.booked.net/weather/oxford-6291"><img src="https://w.bookcdn.com/weather/picture/23_6291_1_1_17bc9c_250_13a085_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=579&anc_id=90986"  alt="booked.net"/></a-->
+      
+      <table class="weathertable">
+        <tr>
+          <th id="footballinfo">{{}}</th>
+        </tr>
+        <tr>
+          <th id="footballinfo">{{}}</th>
+        </tr>
+      </table>
+
+    </div>
+
+    <span id="SEStablecaption"><strong><b>| Today's Timetable |</b></strong></span>
+    <table class="Timetable_fd">
+        
+        <tr id="timetable_title">
+          <th id="footballtitle">Lesson</th>
+          <th id="footballtitle">Teacher</th>
+        </tr>
+        {{}}
+    </table>
+
+    <div class="Foodinfo">
+      <span id="SESfoodcaption"><strong><b>| SES Food Menu |</b></strong></span>
+      <table class="Foodtable_m">
+        <tr>
+          <th id="footballtitle">Breakfast</th>
+        </tr>
+        <tr>
+          <td id="footballinfo"><span>{{}}</span></td>
+        </tr>
+      </table>
+
+<br>
+
+      <table class="Foodtable_l">
+        <tr>
+          <th id="footballtitle">Lunch</th>
+        </tr>
+        <tr>
+          <td id="footballinfo"><span>{{}}</span></td>
+        </tr>
+      </table>
+
+<br>
+
+      <table class="Foodtable_d">
+        <tr>
+          <th id="footballtitle">Dinner</th>
+        </tr>
+        <tr>
+          <td id="footballinfo"><span>{{}}</span></td>
+        </tr>
+      </table>
+
+<br>
+
+      <table class="Foodtable_c">
+        <tr>
+          <th id="footballtitle">Cooper's Cafe</th>
+        </tr>
+        <tr>
+          <td id="footballinfo"><span>{{}}</span></td>
+        </tr>
+      </table>
+
+      </div>
+      <br>
+      <caption id="SEStablecaption"><strong><b>Powered by <a href="https://twitter.com/TeddiesPiClub">Gandy</a>, Designed by Ivan Petrov</b></strong></caption>
+      <br>
+      <caption id="SEStablecaption"><b>Contact us by replying to this email</b></caption>
+      <br>
+      <caption id="SEStablecaption"><b>Click <a href="{{}}">here</a> to unsubscribe(only morning calls)</b></caption>
+      <br>
+      <caption id="SEStablecaption">If you enjoy our service, please consider donating to us through <a href="https://www.paypal.com/us/webapps/mpp/fundraising">Paypal</a></caption>
+      <br>
+  </body>
+
+</html>
